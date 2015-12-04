@@ -1,0 +1,43 @@
+tr:
+  refinery:
+    plugins:
+      package_orders:
+        title: Package Orders
+    package_orders:
+      admin:
+        package_orders:
+          actions:
+            create_new: Yeni Ekle Package Order
+            reorder: Tekrar sirala Package Orders
+            reorder_done: Tekrar siralama tamamlandiPackage Orders
+          records:
+            title: Package Orders
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Package Orders yok henuz.  Tikla "Yeni Ekle Package Order" eklemek senin ilk package order.
+          package_order:
+            view_live_html: Bunu canlu package order goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle package order
+            delete: Bunu Sil package order sonsuza dek
+      package_orders:
+        show:
+          other: Diger Package Orders
+  activerecord:
+    attributes:
+      'refinery/package_orders/package_order':
+        id: Id
+        number: Number
+        out_date: Out Date
+        return_date: Return Date
+        people: People
+        travel_content: Travel Content
+        price1: Price1
+        price2: Price2
+        price3: Price3
+        price4: Price4
+        out_traffic: Out Traffic
+        return_traffic: Return Traffic
+        cost: Cost
+        package_ornot: Package Ornot
+        sales_name: Sales Name
+        sales_time: Sales Time
+        operation: Operation

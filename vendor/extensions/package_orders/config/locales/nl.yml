@@ -1,0 +1,43 @@
+nl:
+  refinery:
+    plugins:
+      package_orders:
+        title: Package Orders
+    package_orders:
+      admin:
+        package_orders:
+          actions:
+            create_new: Nieuwe Package Order toevoegen
+            reorder: De volgorde van de Package Orders wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Package Order-volgorde
+          records:
+            title: Package Orders
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Package Orders. Druk op 'Nieuwe Package Order toevoegen' om de eerste toe te voegen.
+          package_order:
+            view_live_html: Deze package order op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze package order
+            delete: Deze package order definitief verwijderen
+      package_orders:
+        show:
+          other: Andere Package Orders
+  activerecord:
+    attributes:
+      'refinery/package_orders/package_order':
+        id: Id
+        number: Number
+        out_date: Out Date
+        return_date: Return Date
+        people: People
+        travel_content: Travel Content
+        price1: Price1
+        price2: Price2
+        price3: Price3
+        price4: Price4
+        out_traffic: Out Traffic
+        return_traffic: Return Traffic
+        cost: Cost
+        package_ornot: Package Ornot
+        sales_name: Sales Name
+        sales_time: Sales Time
+        operation: Operation

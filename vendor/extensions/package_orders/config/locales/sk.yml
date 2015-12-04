@@ -1,0 +1,43 @@
+sk:
+  refinery:
+    plugins:
+      package_orders:
+        title: Package Orders
+    package_orders:
+      admin:
+        package_orders:
+          actions:
+            create_new: Pridať Package Order
+            reorder: Preusporiadať Package Orders
+            reorder_done: Koniec radenia Package Orders
+          records:
+            title: Package Orders
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Package Orders. Kliknite na "Pridať Package Order" pre pridanie prvého package order.
+          package_order:
+            view_live_html: Zobraziť náhľad package order<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť package order
+            delete: Zmazať package order
+      package_orders:
+        show:
+          other: Daľšie Package Orders
+  activerecord:
+    attributes:
+      'refinery/package_orders/package_order':
+        id: Id
+        number: Number
+        out_date: Out Date
+        return_date: Return Date
+        people: People
+        travel_content: Travel Content
+        price1: Price1
+        price2: Price2
+        price3: Price3
+        price4: Price4
+        out_traffic: Out Traffic
+        return_traffic: Return Traffic
+        cost: Cost
+        package_ornot: Package Ornot
+        sales_name: Sales Name
+        sales_time: Sales Time
+        operation: Operation

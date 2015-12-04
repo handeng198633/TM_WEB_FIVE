@@ -1,0 +1,44 @@
+es:
+  refinery:
+    plugins:
+      package_orders:
+        title: Package Orders
+#        article: masculino/femenino
+    package_orders:
+      admin:
+        package_orders:
+          actions:
+            create_new: Crear nuevo package order
+            reorder: Reordenar package orders
+            reorder_done: Reordenación de package orders completada
+          records:
+            title: Package Orders
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay package orders todavía. Pulsa en "Crear nuevo Package Order" para crear tu primer package order.
+          package_order:
+            view_live_html: Ver este package order como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este package order
+            delete: Borrar este package order para siempre
+      package_orders:
+        show:
+          other: Otros package orders
+  activerecord:
+    attributes:
+      'refinery/package_orders/package_order':
+        id: Id
+        number: Number
+        out_date: Out Date
+        return_date: Return Date
+        people: People
+        travel_content: Travel Content
+        price1: Price1
+        price2: Price2
+        price3: Price3
+        price4: Price4
+        out_traffic: Out Traffic
+        return_traffic: Return Traffic
+        cost: Cost
+        package_ornot: Package Ornot
+        sales_name: Sales Name
+        sales_time: Sales Time
+        operation: Operation

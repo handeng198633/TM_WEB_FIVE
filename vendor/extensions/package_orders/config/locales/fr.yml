@@ -1,0 +1,43 @@
+fr:
+  refinery:
+    plugins:
+      package_orders:
+        title: Package Orders
+    package_orders:
+      admin:
+        package_orders:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Package Order
+            reorder: Réordonner les Package Orders
+            reorder_done: Fin de réordonnancement des Package Orders
+          records:
+            title: Package Orders
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Package Order. Cliquer sur "Créer un(e) nouve(au/l/lle) Package Order" pour créer votre premi(er/ère) package order.'
+          package_order:
+            view_live_html: Voir ce(t/tte) package order <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) package order
+            delete: Supprimer définitivement ce(t/tte) package order
+      package_orders:
+        show:
+          other: Autres Package Orders
+  activerecord:
+    attributes:
+      'refinery/package_orders/package_order':
+        id: Id
+        number: Number
+        out_date: Out Date
+        return_date: Return Date
+        people: People
+        travel_content: Travel Content
+        price1: Price1
+        price2: Price2
+        price3: Price3
+        price4: Price4
+        out_traffic: Out Traffic
+        return_traffic: Return Traffic
+        cost: Cost
+        package_ornot: Package Ornot
+        sales_name: Sales Name
+        sales_time: Sales Time
+        operation: Operation

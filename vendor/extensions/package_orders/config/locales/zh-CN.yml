@@ -1,0 +1,45 @@
+zh-CN:
+  refinery:
+    plugins:
+      package_orders:
+        title: Package Orders
+    package_orders:
+      admin:
+        package_orders:
+          actions:
+            create_new: 建立新的 Package Order
+            reorder: 对 Package Orders 重新排序
+            reorder_done: 对 Package Orders 的重新排序结束
+          records:
+            title: Package Orders
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Package Orders yet. Click "Add New Package Order" to add your first package order.
+            no_items_yet: 目前没有 Package Orders . 点击 "Add New Package Order" 创建一个package order.
+          package_order:
+            view_live_html: 查看 package order 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 package order
+            delete: 永久删除 package order
+      package_orders:
+        show:
+          other: 其他 Package Orders
+  activerecord:
+    attributes:
+      'refinery/package_orders/package_order':
+        id: Id
+        number: Number
+        out_date: Out Date
+        return_date: Return Date
+        people: People
+        travel_content: Travel Content
+        price1: Price1
+        price2: Price2
+        price3: Price3
+        price4: Price4
+        out_traffic: Out Traffic
+        return_traffic: Return Traffic
+        cost: Cost
+        package_ornot: Package Ornot
+        sales_name: Sales Name
+        sales_time: Sales Time
+        operation: Operation

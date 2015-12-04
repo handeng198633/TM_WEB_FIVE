@@ -1,0 +1,98 @@
+<%= form_for [refinery, :package_orders_admin, @package_order] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @package_order,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :id -%>
+    <%= f.number_field :id -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :number -%>
+    <%= f.text_field :number -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :out_date -%>
+    <%= f.datetime_select :out_date -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :return_date -%>
+    <%= f.datetime_select :return_date -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :people -%>
+    <%= f.text_field :people -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :travel_content -%>
+    <%= render '/refinery/admin/resource_picker',
+               :f => f,
+               :field => :travel_content_id,
+               :resource => @package_order.travel_content -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :price1 -%>
+    <%= f.number_field :price1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :price2 -%>
+    <%= f.number_field :price2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :price3 -%>
+    <%= f.number_field :price3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :price4 -%>
+    <%= f.number_field :price4 -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:out_traffic, :return_traffic, :package_ornot],
+                :object => "package_orders/package_order" -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :cost -%>
+    <%= f.text_field :cost -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :sales_name -%>
+    <%= f.text_field :sales_name -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :sales_time -%>
+    <%= f.datetime_select :sales_time -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :operation -%>
+    <%= f.text_field :operation -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.package_orders.admin.package_orders.package_order'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @package_order.number) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

@@ -1,0 +1,43 @@
+en:
+  refinery:
+    plugins:
+      package_orders:
+        title: Package Orders
+    package_orders:
+      admin:
+        package_orders:
+          actions:
+            create_new: Add New Package Order
+            reorder: Reorder Package Orders
+            reorder_done: Done Reordering Package Orders
+          records:
+            title: Package Orders
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Package Orders yet. Click "Add New Package Order" to add your first package order.
+          package_order:
+            view_live_html: View this package order live <br/><em>(opens in a new window)</em>
+            edit: Edit this package order
+            delete: Remove this package order forever
+      package_orders:
+        show:
+          other: Other Package Orders
+  activerecord:
+    attributes:
+      'refinery/package_orders/package_order':
+        id: Id
+        number: Number
+        out_date: Out Date
+        return_date: Return Date
+        people: People
+        travel_content: Travel Content
+        price1: Price1
+        price2: Price2
+        price3: Price3
+        price4: Price4
+        out_traffic: Out Traffic
+        return_traffic: Return Traffic
+        cost: Cost
+        package_ornot: Package Ornot
+        sales_name: Sales Name
+        sales_time: Sales Time
+        operation: Operation

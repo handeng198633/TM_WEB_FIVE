@@ -8,3 +8,6 @@
 
 # Added by Refinery CMS Pages extension
 Refinery::Pages::Engine.load_seed
+
+# Added by Refinery CMS PackageOrders extension
+Refinery::PackageOrders::Engine.load_seed

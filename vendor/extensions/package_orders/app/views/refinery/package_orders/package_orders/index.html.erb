@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="package_orders">
+    <% @package_orders.each do |package_order| %>
+      <li>
+        <%= link_to package_order.number, refinery.package_orders_package_order_path(package_order) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>
