@@ -11,3 +11,9 @@ Refinery::Pages::Engine.load_seed
 
 # Added by Refinery CMS PackageOrders extension
 Refinery::PackageOrders::Engine.load_seed
+
+# Added by Refinery CMS FitOrders extension
+Refinery::FitOrders::Engine.load_seed
+
+# Added by Refinery CMS LineLists extension
+Refinery::LineLists::Engine.load_seed

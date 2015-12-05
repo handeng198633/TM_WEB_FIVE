@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151204073536) do
+ActiveRecord::Schema.define(version: 20151204103021) do
 
   create_table "refinery_authentication_devise_roles", force: :cascade do |t|
     t.string "title"
@@ -55,6 +55,26 @@ ActiveRecord::Schema.define(version: 20151204073536) do
   add_index "refinery_authentication_devise_users", ["id"], name: "index_refinery_authentication_devise_users_on_id"
   add_index "refinery_authentication_devise_users", ["slug"], name: "index_refinery_authentication_devise_users_on_slug"
 
+  create_table "refinery_fit_orders", force: :cascade do |t|
+    t.integer  "order_id"
+    t.string   "group_number"
+    t.datetime "out_date"
+    t.datetime "return_date"
+    t.string   "book_id"
+    t.string   "book_name"
+    t.string   "person_list"
+    t.text     "come_info"
+    t.text     "go_info"
+    t.integer  "price1"
+    t.integer  "price2"
+    t.integer  "price3"
+    t.integer  "price4"
+    t.text     "customer"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "refinery_image_translations", force: :cascade do |t|
     t.integer  "refinery_image_id", null: false
     t.string   "locale",            null: false
@@ -78,6 +98,23 @@ ActiveRecord::Schema.define(version: 20151204073536) do
     t.datetime "updated_at"
     t.string   "image_title"
     t.string   "image_alt"
+  end
+
+  create_table "refinery_line_lists", force: :cascade do |t|
+    t.integer  "line_id"
+    t.string   "group_number"
+    t.integer  "last_day"
+    t.string   "line_name"
+    t.string   "line_info"
+    t.text     "travel_content"
+    t.integer  "picture_id"
+    t.integer  "document_id"
+    t.string   "price"
+    t.string   "record_person"
+    t.string   "sales_ornot"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "refinery_package_orders", force: :cascade do |t|

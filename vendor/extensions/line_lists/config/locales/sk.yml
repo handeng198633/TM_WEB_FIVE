@@ -1,0 +1,37 @@
+sk:
+  refinery:
+    plugins:
+      line_lists:
+        title: Line Lists
+    line_lists:
+      admin:
+        line_lists:
+          actions:
+            create_new: Pridať Line List
+            reorder: Preusporiadať Line Lists
+            reorder_done: Koniec radenia Line Lists
+          records:
+            title: Line Lists
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Line Lists. Kliknite na "Pridať Line List" pre pridanie prvého line list.
+          line_list:
+            view_live_html: Zobraziť náhľad line list<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť line list
+            delete: Zmazať line list
+      line_lists:
+        show:
+          other: Daľšie Line Lists
+  activerecord:
+    attributes:
+      'refinery/line_lists/line_list':
+        line_id: Line
+        group_number: Group Number
+        last_day: Last Day
+        line_name: Line Name
+        line_info: Line Info
+        travel_content: Travel Content
+        picture: Picture
+        document: Document
+        price: Price
+        record_person: Record Person
+        sales_ornot: Sales Ornot

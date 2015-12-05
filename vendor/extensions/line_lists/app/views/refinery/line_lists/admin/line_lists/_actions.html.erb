@@ -1,0 +1,20 @@
+<ul>
+  <% if ::Refinery::LineLists::Admin::LineListsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.line_lists_admin_line_lists_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= action_label :add, refinery.new_line_lists_admin_line_list_path, t('.create_new') %>
+  </li>
+<% if !searching? && ::Refinery::LineLists::Admin::LineListsController.sortable? && ::Refinery::LineLists::LineList.many? %>
+  <li>
+    <%= action_label :reorder,
+                     refinery.line_lists_admin_line_lists_path,
+                     t('.reorder', what:  "Line Lists"), id: 'reorder_action'%>
+    <%= action_label :reorder_done,
+                     refinery.line_lists_admin_line_lists_path,
+                      t('.reorder_done', what: "Line Lists"), id: 'reorder_action_done', class: 'hidden'%>
+  </li>
+<% end %>
+</ul>

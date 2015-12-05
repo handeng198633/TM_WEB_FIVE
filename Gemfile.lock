@@ -43,6 +43,12 @@ GIT
 PATH
   remote: vendor/extensions
   specs:
+    refinerycms-fit_orders (1.0)
+      acts_as_indexed (~> 0.8.0)
+      refinerycms-core (~> 3.0.0)
+    refinerycms-line_lists (1.0)
+      acts_as_indexed (~> 0.8.0)
+      refinerycms-core (~> 3.0.0)
     refinerycms-package_orders (1.0)
       acts_as_indexed (~> 0.8.0)
       refinerycms-core (~> 3.0.0)
@@ -103,6 +109,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.8.0)
+    concurrent-ruby (1.0.0)
     debug_inspector (0.0.2)
     decorators (2.0.1)
       railties (>= 4.0.0, < 5.0.0)
@@ -216,7 +223,8 @@ GEM
       railties (>= 3.0.0)
     speakingurl-rails (1.1.5)
       railties (>= 3.1)
-    sprockets (3.4.1)
+    sprockets (3.5.0)
+      concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
     sprockets-rails (2.3.3)
       actionpack (>= 3.0)
@@ -254,6 +262,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   coffee-script-source (= 1.8.0)
   execjs
+  i18n
   jbuilder (~> 2.0)
   jquery-rails
   quiet_assets
@@ -261,6 +270,8 @@ DEPENDENCIES
   refinerycms!
   refinerycms-acts-as-indexed (~> 2.0, >= 2.0.0)
   refinerycms-authentication-devise (~> 1.0)
+  refinerycms-fit_orders!
+  refinerycms-line_lists!
   refinerycms-package_orders!
   refinerycms-wymeditor (~> 1.0, >= 1.0.6)
   sass-rails (~> 5.0)

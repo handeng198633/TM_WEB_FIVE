@@ -1,0 +1,40 @@
+fr:
+  refinery:
+    plugins:
+      fit_orders:
+        title: Fit Orders
+    fit_orders:
+      admin:
+        fit_orders:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Fit Order
+            reorder: Réordonner les Fit Orders
+            reorder_done: Fin de réordonnancement des Fit Orders
+          records:
+            title: Fit Orders
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Fit Order. Cliquer sur "Créer un(e) nouve(au/l/lle) Fit Order" pour créer votre premi(er/ère) fit order.'
+          fit_order:
+            view_live_html: Voir ce(t/tte) fit order <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) fit order
+            delete: Supprimer définitivement ce(t/tte) fit order
+      fit_orders:
+        show:
+          other: Autres Fit Orders
+  activerecord:
+    attributes:
+      'refinery/fit_orders/fit_order':
+        order_id: Order
+        group_number: Group Number
+        out_date: Out Date
+        return_date: Return Date
+        book_id: Book
+        book_name: Book Name
+        person_list: Person List
+        come_info: Come Info
+        go_info: Go Info
+        price1: Price1
+        price2: Price2
+        price3: Price3
+        price4: Price4
+        customer: Customer

@@ -1,0 +1,2 @@
+module RefineryHelper
+end

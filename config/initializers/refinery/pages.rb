@@ -6,17 +6,17 @@ Refinery::Pages.configure do |config|
   # end
 
   # Configure global page default parts
-  # config.default_parts = ["Body", "Side Body"]
+  config.default_parts = ["Body", "Side Body"]
 
   # Configure whether to allow adding new page parts
   # config.new_page_parts = false
 
   # Configure whether to enable marketable_urls
-  # config.marketable_urls = true
+  config.marketable_urls = true
 
   # You can specify reserved words that won't be used as page slugs.
   # This only applies when marketable_urls is enabled.
-  # config.friendly_id_reserved_words = ["index", "new", "session", "login", "logout", "users", "refinery", "admin", "images", "wymiframe"]
+  config.friendly_id_reserved_words = ["index", "new", "session", "login", "logout", "users", "refinery", "admin", "images", "wymiframe"]
 
   # Configure how many pages per page should be displayed when a dialog is presented that contains a links to pages
   # config.pages_per_dialog = 14
@@ -38,7 +38,7 @@ Refinery::Pages.configure do |config|
   # If false, page slugs are global, and are, in effect, custom routes that may contain slashes.
   # By default, these routes will be flattened to the root, using the slugged page title,
   # and will no longer be nested as children.
-  # config.scope_slug_by_parent = true
+  config.scope_slug_by_parent = true
 
   # Set this to true if you want backend pages to be cached
   # config.cache_pages_backend = false

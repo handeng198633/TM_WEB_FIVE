@@ -1,0 +1,38 @@
+es:
+  refinery:
+    plugins:
+      line_lists:
+        title: Line Lists
+#        article: masculino/femenino
+    line_lists:
+      admin:
+        line_lists:
+          actions:
+            create_new: Crear nuevo line list
+            reorder: Reordenar line lists
+            reorder_done: Reordenación de line lists completada
+          records:
+            title: Line Lists
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay line lists todavía. Pulsa en "Crear nuevo Line List" para crear tu primer line list.
+          line_list:
+            view_live_html: Ver este line list como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este line list
+            delete: Borrar este line list para siempre
+      line_lists:
+        show:
+          other: Otros line lists
+  activerecord:
+    attributes:
+      'refinery/line_lists/line_list':
+        line_id: Line
+        group_number: Group Number
+        last_day: Last Day
+        line_name: Line Name
+        line_info: Line Info
+        travel_content: Travel Content
+        picture: Picture
+        document: Document
+        price: Price
+        record_person: Record Person
+        sales_ornot: Sales Ornot

@@ -1,0 +1,42 @@
+zh-CN:
+  refinery:
+    plugins:
+      fit_orders:
+        title: Fit Orders
+    fit_orders:
+      admin:
+        fit_orders:
+          actions:
+            create_new: 建立新的 Fit Order
+            reorder: 对 Fit Orders 重新排序
+            reorder_done: 对 Fit Orders 的重新排序结束
+          records:
+            title: Fit Orders
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Fit Orders yet. Click "Add New Fit Order" to add your first fit order.
+            no_items_yet: 目前没有 Fit Orders . 点击 "Add New Fit Order" 创建一个fit order.
+          fit_order:
+            view_live_html: 查看 fit order 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 fit order
+            delete: 永久删除 fit order
+      fit_orders:
+        show:
+          other: 其他 Fit Orders
+  activerecord:
+    attributes:
+      'refinery/fit_orders/fit_order':
+        order_id: Order
+        group_number: Group Number
+        out_date: Out Date
+        return_date: Return Date
+        book_id: Book
+        book_name: Book Name
+        person_list: Person List
+        come_info: Come Info
+        go_info: Go Info
+        price1: Price1
+        price2: Price2
+        price3: Price3
+        price4: Price4
+        customer: Customer

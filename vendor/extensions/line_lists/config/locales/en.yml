@@ -1,0 +1,37 @@
+en:
+  refinery:
+    plugins:
+      line_lists:
+        title: Line Lists
+    line_lists:
+      admin:
+        line_lists:
+          actions:
+            create_new: Add New Line List
+            reorder: Reorder Line Lists
+            reorder_done: Done Reordering Line Lists
+          records:
+            title: Line Lists
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Line Lists yet. Click "Add New Line List" to add your first line list.
+          line_list:
+            view_live_html: View this line list live <br/><em>(opens in a new window)</em>
+            edit: Edit this line list
+            delete: Remove this line list forever
+      line_lists:
+        show:
+          other: Other Line Lists
+  activerecord:
+    attributes:
+      'refinery/line_lists/line_list':
+        line_id: Line
+        group_number: Group Number
+        last_day: Last Day
+        line_name: Line Name
+        line_info: Line Info
+        travel_content: Travel Content
+        picture: Picture
+        document: Document
+        price: Price
+        record_person: Record Person
+        sales_ornot: Sales Ornot

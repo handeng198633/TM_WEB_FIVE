@@ -1,0 +1,37 @@
+nl:
+  refinery:
+    plugins:
+      line_lists:
+        title: Line Lists
+    line_lists:
+      admin:
+        line_lists:
+          actions:
+            create_new: Nieuwe Line List toevoegen
+            reorder: De volgorde van de Line Lists wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Line List-volgorde
+          records:
+            title: Line Lists
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Line Lists. Druk op 'Nieuwe Line List toevoegen' om de eerste toe te voegen.
+          line_list:
+            view_live_html: Deze line list op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze line list
+            delete: Deze line list definitief verwijderen
+      line_lists:
+        show:
+          other: Andere Line Lists
+  activerecord:
+    attributes:
+      'refinery/line_lists/line_list':
+        line_id: Line
+        group_number: Group Number
+        last_day: Last Day
+        line_name: Line Name
+        line_info: Line Info
+        travel_content: Travel Content
+        picture: Picture
+        document: Document
+        price: Price
+        record_person: Record Person
+        sales_ornot: Sales Ornot

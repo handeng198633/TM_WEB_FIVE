@@ -1,0 +1,40 @@
+sk:
+  refinery:
+    plugins:
+      fit_orders:
+        title: Fit Orders
+    fit_orders:
+      admin:
+        fit_orders:
+          actions:
+            create_new: Pridať Fit Order
+            reorder: Preusporiadať Fit Orders
+            reorder_done: Koniec radenia Fit Orders
+          records:
+            title: Fit Orders
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Fit Orders. Kliknite na "Pridať Fit Order" pre pridanie prvého fit order.
+          fit_order:
+            view_live_html: Zobraziť náhľad fit order<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť fit order
+            delete: Zmazať fit order
+      fit_orders:
+        show:
+          other: Daľšie Fit Orders
+  activerecord:
+    attributes:
+      'refinery/fit_orders/fit_order':
+        order_id: Order
+        group_number: Group Number
+        out_date: Out Date
+        return_date: Return Date
+        book_id: Book
+        book_name: Book Name
+        person_list: Person List
+        come_info: Come Info
+        go_info: Go Info
+        price1: Price1
+        price2: Price2
+        price3: Price3
+        price4: Price4
+        customer: Customer

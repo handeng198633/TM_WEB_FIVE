@@ -1,0 +1,20 @@
+<ul>
+  <% if ::Refinery::FitOrders::Admin::FitOrdersController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.fit_orders_admin_fit_orders_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= action_label :add, refinery.new_fit_orders_admin_fit_order_path, t('.create_new') %>
+  </li>
+<% if !searching? && ::Refinery::FitOrders::Admin::FitOrdersController.sortable? && ::Refinery::FitOrders::FitOrder.many? %>
+  <li>
+    <%= action_label :reorder,
+                     refinery.fit_orders_admin_fit_orders_path,
+                     t('.reorder', what:  "Fit Orders"), id: 'reorder_action'%>
+    <%= action_label :reorder_done,
+                     refinery.fit_orders_admin_fit_orders_path,
+                      t('.reorder_done', what: "Fit Orders"), id: 'reorder_action_done', class: 'hidden'%>
+  </li>
+<% end %>
+</ul>

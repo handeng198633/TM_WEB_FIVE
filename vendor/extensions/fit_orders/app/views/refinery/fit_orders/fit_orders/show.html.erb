@@ -1,0 +1,105 @@
+<% content_for :body_content_title do %>
+  <%= @fit_order.group_number %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Order</h1>
+    <p>
+      <%=raw @fit_order.order_id %>
+    </p>
+  </section>
+  <section>
+    <h1>Group Number</h1>
+    <p>
+      <%=raw @fit_order.group_number %>
+    </p>
+  </section>
+  <section>
+    <h1>Out Date</h1>
+    <p>
+      <%=raw @fit_order.out_date %>
+    </p>
+  </section>
+  <section>
+    <h1>Return Date</h1>
+    <p>
+      <%=raw @fit_order.return_date %>
+    </p>
+  </section>
+  <section>
+    <h1>Book</h1>
+    <p>
+      <%=raw @fit_order.book_id %>
+    </p>
+  </section>
+  <section>
+    <h1>Book Name</h1>
+    <p>
+      <%=raw @fit_order.book_name %>
+    </p>
+  </section>
+  <section>
+    <h1>Person List</h1>
+    <p>
+      <%=raw @fit_order.person_list %>
+    </p>
+  </section>
+  <section>
+    <h1>Come Info</h1>
+    <p>
+      <%=raw @fit_order.come_info %>
+    </p>
+  </section>
+  <section>
+    <h1>Go Info</h1>
+    <p>
+      <%=raw @fit_order.go_info %>
+    </p>
+  </section>
+  <section>
+    <h1>Price1</h1>
+    <p>
+      <%=raw @fit_order.price1 %>
+    </p>
+  </section>
+  <section>
+    <h1>Price2</h1>
+    <p>
+      <%=raw @fit_order.price2 %>
+    </p>
+  </section>
+  <section>
+    <h1>Price3</h1>
+    <p>
+      <%=raw @fit_order.price3 %>
+    </p>
+  </section>
+  <section>
+    <h1>Price4</h1>
+    <p>
+      <%=raw @fit_order.price4 %>
+    </p>
+  </section>
+  <section>
+    <h1>Customer</h1>
+    <p>
+      <%=raw @fit_order.customer %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="fit_orders">
+      <% @fit_orders.each do |fit_order| %>
+        <li>
+          <%= link_to fit_order.group_number, refinery.fit_orders_fit_order_path(fit_order) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

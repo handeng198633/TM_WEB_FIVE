@@ -1,0 +1,37 @@
+fr:
+  refinery:
+    plugins:
+      line_lists:
+        title: Line Lists
+    line_lists:
+      admin:
+        line_lists:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Line List
+            reorder: Réordonner les Line Lists
+            reorder_done: Fin de réordonnancement des Line Lists
+          records:
+            title: Line Lists
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Line List. Cliquer sur "Créer un(e) nouve(au/l/lle) Line List" pour créer votre premi(er/ère) line list.'
+          line_list:
+            view_live_html: Voir ce(t/tte) line list <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) line list
+            delete: Supprimer définitivement ce(t/tte) line list
+      line_lists:
+        show:
+          other: Autres Line Lists
+  activerecord:
+    attributes:
+      'refinery/line_lists/line_list':
+        line_id: Line
+        group_number: Group Number
+        last_day: Last Day
+        line_name: Line Name
+        line_info: Line Info
+        travel_content: Travel Content
+        picture: Picture
+        document: Document
+        price: Price
+        record_person: Record Person
+        sales_ornot: Sales Ornot

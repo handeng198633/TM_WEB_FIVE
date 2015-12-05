@@ -1,0 +1,39 @@
+zh-CN:
+  refinery:
+    plugins:
+      line_lists:
+        title: Line Lists
+    line_lists:
+      admin:
+        line_lists:
+          actions:
+            create_new: 建立新的 Line List
+            reorder: 对 Line Lists 重新排序
+            reorder_done: 对 Line Lists 的重新排序结束
+          records:
+            title: Line Lists
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Line Lists yet. Click "Add New Line List" to add your first line list.
+            no_items_yet: 目前没有 Line Lists . 点击 "Add New Line List" 创建一个line list.
+          line_list:
+            view_live_html: 查看 line list 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 line list
+            delete: 永久删除 line list
+      line_lists:
+        show:
+          other: 其他 Line Lists
+  activerecord:
+    attributes:
+      'refinery/line_lists/line_list':
+        line_id: Line
+        group_number: Group Number
+        last_day: Last Day
+        line_name: Line Name
+        line_info: Line Info
+        travel_content: Travel Content
+        picture: Picture
+        document: Document
+        price: Price
+        record_person: Record Person
+        sales_ornot: Sales Ornot

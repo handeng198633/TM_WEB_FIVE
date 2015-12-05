@@ -1,0 +1,80 @@
+<%= form_for [refinery, :fit_orders_admin, @fit_order] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @fit_order,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :order_id -%>
+    <%= f.number_field :order_id -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :group_number -%>
+    <%= f.text_field :group_number -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :out_date -%>
+    <%= f.datetime_select :out_date -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :return_date -%>
+    <%= f.datetime_select :return_date -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :book_id -%>
+    <%= f.text_field :book_id -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :book_name -%>
+    <%= f.text_field :book_name -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :person_list -%>
+    <%= f.text_field :person_list -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:come_info, :go_info, :customer],
+                :object => "fit_orders/fit_order" -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :price1 -%>
+    <%= f.number_field :price1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :price2 -%>
+    <%= f.number_field :price2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :price3 -%>
+    <%= f.number_field :price3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :price4 -%>
+    <%= f.number_field :price4 -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.fit_orders.admin.fit_orders.fit_order'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @fit_order.group_number) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

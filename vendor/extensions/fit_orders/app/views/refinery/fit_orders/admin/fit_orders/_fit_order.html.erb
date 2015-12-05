@@ -1,0 +1,15 @@
+<li class='clearfix record <%= cycle("on", "on-hover") %>' id="<%= dom_id(fit_order) -%>">
+  <span class='title'>
+    <%= fit_order.group_number %>
+
+  </span>
+  <span class='actions'>
+    
+      <%= action_icon(:preview, refinery.fit_orders_fit_order_path(fit_order), t('.view_live_html')) %>
+    
+    <%= action_icon(:edit,    refinery.edit_fit_orders_admin_fit_order_path(fit_order), t('.edit') ) %>
+    <%= action_icon(:delete,  refinery.fit_orders_admin_fit_order_path(fit_order), t('.delete'),
+      { class: "cancel confirm-delete",
+        data: {confirm: t('message',  scope: 'refinery.admin.delete', title: fit_order.group_number)}}  ) %>
+  </span>
+</li>

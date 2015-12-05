@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="fit_orders">
+    <% @fit_orders.each do |fit_order| %>
+      <li>
+        <%= link_to fit_order.group_number, refinery.fit_orders_fit_order_path(fit_order) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

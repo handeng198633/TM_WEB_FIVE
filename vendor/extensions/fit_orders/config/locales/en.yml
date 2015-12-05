@@ -1,0 +1,40 @@
+en:
+  refinery:
+    plugins:
+      fit_orders:
+        title: Fit Orders
+    fit_orders:
+      admin:
+        fit_orders:
+          actions:
+            create_new: Add New Fit Order
+            reorder: Reorder Fit Orders
+            reorder_done: Done Reordering Fit Orders
+          records:
+            title: Fit Orders
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Fit Orders yet. Click "Add New Fit Order" to add your first fit order.
+          fit_order:
+            view_live_html: View this fit order live <br/><em>(opens in a new window)</em>
+            edit: Edit this fit order
+            delete: Remove this fit order forever
+      fit_orders:
+        show:
+          other: Other Fit Orders
+  activerecord:
+    attributes:
+      'refinery/fit_orders/fit_order':
+        order_id: Order
+        group_number: Group Number
+        out_date: Out Date
+        return_date: Return Date
+        book_id: Book
+        book_name: Book Name
+        person_list: Person List
+        come_info: Come Info
+        go_info: Go Info
+        price1: Price1
+        price2: Price2
+        price3: Price3
+        price4: Price4
+        customer: Customer

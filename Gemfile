@@ -27,6 +27,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'coffee-script-source', '1.8.0'
 gem 'execjs'
+gem 'i18n'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -64,3 +65,5 @@ gem 'refinerycms-wymeditor', ['~> 1.0', '>= 1.0.6']
 gem 'refinerycms-authentication-devise', '~> 1.0'
 
 gem 'refinerycms-package_orders', path: 'vendor/extensions'
+gem 'refinerycms-fit_orders', path: 'vendor/extensions'
+gem 'refinerycms-line_lists', path: 'vendor/extensions'
