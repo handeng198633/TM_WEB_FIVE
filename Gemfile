@@ -51,6 +51,11 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+#search tables
+gem 'jquery-datatables-rails', '~> 3.3.0'
+gem 'jquery-ui-rails'
+gem 'will_paginate'
+
 gem 'refinerycms', git: 'http://github.com/refinery/refinerycms', branch: 'master'
 
 gem 'quiet_assets', group: :development

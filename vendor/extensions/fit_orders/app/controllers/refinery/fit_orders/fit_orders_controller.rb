@@ -9,6 +9,10 @@ module Refinery
         # you can use meta fields from your model instead (e.g. browser_title)
         # by swapping @page for @fit_order in the line below:
         present(@page)
+        respond_to do |format|
+        format.html
+        format.json { render json: FitOrdersDatatable.new(view_context) }
+      end
       end
 
       def show
